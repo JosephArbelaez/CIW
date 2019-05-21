@@ -9,21 +9,32 @@
 article {	
   padding: 10px;
 }
-#img-rotate {
-  -ms-transform: rotate(345deg); /* IE9 */
-  -webkit-transform: rotate(345deg); /* Chrome and Safari */
-  transform: rotate(345deg);
-}
+@keyframes logoanimation {
+  0% {left: 0px; top: 0px;}
+  50% {left: 200px; top: 0px;}
+  100% {left: 0px; top: 0px;}
+  }
 
-#video-rotate {
-  -ms-transform: rotate(15deg); /* IE9 */
-  -webkit-transform: rotate(15deg); /* Chrome and Safari */
-  transform: rotate(15deg);
-}
-#logo-rotate {
-  -webkit-transform: rotateY(180deg); /* Chrome and Safari */
-  transform: rotateY(180deg);
-}
+  #animation {
+    position:relative;
+ 
+    /* Chrome and Safari: */
+    -webkit-animation-name: logoanimation;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+ 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+ 
+    animation-name: logoanimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+ 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+ }
 body {
   font-family: oregonfont;
   font-size: 85%;
@@ -87,5 +98,19 @@ section {
   box-shadow: 5px 5px 5px #888888;
 }
 
+#img-rotate {
+  -ms-transform: rotate(345deg); /* IE9 */
+  -webkit-transform: rotate(345deg); /* Chrome and Safari */
+  transform: rotate(345deg);
+}
 
+#logo-rotate {
+  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+  transform: rotateY(180deg);
+} 
 
+#video-rotate {
+  -ms-transform: rotate(15deg); /* IE9 */
+  -webkit-transform: rotate(15deg); /* Chrome and Safari */
+  transform: rotate(15deg);
+}

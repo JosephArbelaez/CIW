@@ -1,12 +1,17 @@
 /* STYLE SHEET FOR INDEX.HTM */
 
+@font-face {
+  font-family: oregonfont;
+  src: url("../media/oregon book.ttf");
+}
+
 article {	
   padding: 10px;
 }
 
 body {
-  font-size: 80%;
-  font-family: arial, helvetica, geneva, sans-serif;
+  font-size: 85%;
+  font-family: oregonfont;
   border-style: solid;
   border-width: 5px;
   border-color: #d8d8d8;
@@ -24,9 +29,9 @@ footer {
 }
 
 h1 {
-  font-family: arial, helvetica, geneva, sans-serif;
   margin-top: 5px; 
   margin-bottom: 0px; 
+  text-shadow: 3px 3px 3px #888888;
 }
 
 header {
@@ -45,14 +50,10 @@ nav {
   opacity: 0.8;
 }
 
-.navlinks {
-  display: block;
-  border: 2px solid #a1a1a1;
-  padding: 2px 5px;
-  background: #add8e6;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 5px 5px 5px #888888;
+section {
+  background-image: url("../media/globe.png"); 
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .floatright {
@@ -61,9 +62,15 @@ nav {
   margin: 10px;
 }
 
-Section {
-  background-image: url("../media/globe.png");
-  background-repeat: no-repeat;
-  background-size: cover contain;
+.navlinks {
+  display: block;
+  border: 2px solid #a1a1a1;
+  padding: 2px 5px; 
+  background: #add8e6;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px #888888;
 }
+
+
 

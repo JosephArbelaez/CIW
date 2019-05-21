@@ -1,5 +1,7 @@
 /* STYLE SHEET FOR INDEX.HTM */
 
+
+
 article {	
   padding: 10px;
 }
@@ -45,6 +47,12 @@ nav {
   opacity: 0.8;
 }
 
+section {
+  background-image: url("../media/globe.png"); 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .navlinks {
   display: block;
   border: 2px solid #a1a1a1;
@@ -61,9 +69,5 @@ nav {
   margin: 10px;
 }
 
-Section {
-  background-image: url("../media/globe.png");
-  background-repeat: no-repeat;
-  background-size: cover contain;
-}
+
 

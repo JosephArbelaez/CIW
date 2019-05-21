@@ -1,12 +1,28 @@
 /* STYLE SHEET FOR INDEX.HTM */
 
+
+@font-face {
+  font-family: oregonfont;
+  src: url("../media/oregon book.ttf");
+}
+
 article {	
   padding: 10px;
 }
+#img-rotate {
+  -ms-transform: rotate(345deg); /* IE9 */
+  -webkit-transform: rotate(345deg); /* Chrome and Safari */
+  transform: rotate(345deg);
+}
 
+#video-rotate {
+  -ms-transform: rotate(15deg); /* IE9 */
+  -webkit-transform: rotate(15deg); /* Chrome and Safari */
+  transform: rotate(15deg);
+}
 body {
-  font-size: 80%;
-  font-family: arial, helvetica, geneva, sans-serif;
+  font-family: oregonfont;
+  font-size: 85%;
   border-style: solid;
   border-width: 5px;
   border-color: #d8d8d8;
@@ -24,7 +40,7 @@ footer {
 }
 
 h1 {
-  font-family: arial, helvetica, geneva, sans-serif;
+  text-shadow: 3px 3px 3px #888888;
   margin-top: 5px; 
   margin-bottom: 0px; 
 }
@@ -45,14 +61,10 @@ nav {
   opacity: 0.8;
 }
 
-.navlinks {
-  display: block;
-  border: 2px solid #a1a1a1;
-  padding: 2px 5px;
-  background: #add8e6;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 5px 5px 5px #888888;
+section {
+  background-image: url("../media/globe.png"); 
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .floatright {
@@ -61,9 +73,15 @@ nav {
   margin: 10px;
 }
 
-Section {
-  background-image: url("../media/globe.png");
-  background-repeat: no-repeat;
-  background-size: cover contain;
+.navlinks {
+  display: block;
+  border: 2px solid #a1a1a1;
+  padding: 2px 5px; 
+  background: #add8e6;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px #888888;
 }
+
+
 

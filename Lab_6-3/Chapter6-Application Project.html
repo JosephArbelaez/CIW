@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hiya!</title>
+    <script>
+        function add (x,y) {
+            return x+y;
+        }
+        function subtract (x,y) {
+            return x-y;
+        }
+        function multiply (x,y) {
+            return x*y;
+        }
+        function divide (x,y) {
+            if(y!=0){
+                return x/y;
+            }
+            return "You cannot divide by zero";
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let x = parseFloat(prompt("First Number"));
+        let y = parseFloat(prompt("Second Number"));
+        document.write("First number + Second Number: " + add(x,y) + "<br>");
+        document.write("First number - Second Number: " + subtract(x,y) + "<br>");
+        document.write("First number * Second Number: " + multiply(x,y) + "<br>");
+        document.write("First number / Second Numbe: " + divide(x,y) + "<br>");
+    </script>
+</body>
+</html>
